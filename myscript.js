@@ -1,4 +1,9 @@
-console.log("Welcome to Rock Paper Scissors!");
+function getHumanChoice()
+{
+    let yourChoice = prompt("Choose Your Weapon:");
+    return yourChoice;
+    
+}
 
 function getComputerChoice()
 {
@@ -13,7 +18,20 @@ function getComputerChoice()
     }else{
         weapon="Scissors";
     }
-    console.log(weapon);
+    
+    return weapon;
 }
 
-getComputerChoice();
+function playRound(humanChoice, computerChoice)
+{
+    String(humanChoice).
+}
+
+
+let humanScore = 0;
+let computerScore = 0;
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection,computerSelection);
