@@ -56,13 +56,34 @@ function playRound(humanChoice, computerChoice)
     }
 }
 
+function playGame()
+{
+   
+    let rounds = 5;
+    for(let i=1;i<=5;i++)
+    {
+        let loopSelectionHuman = getHumanChoice();
+        let loopSelectionComputer = getComputerChoice();
+        playRound(loopSelectionHuman , loopSelectionComputer);
+        console.log(`The score is(User vs Computer): ${humanScore} - ${computerScore}`);
+    }
+
+    console.log(`The final score is ${humanScore} - ${computerScore}`);
+    if(humanScore==computerScore)
+    {
+        console.log("It's a tie! Not a bad game");
+    }else if(humanScore>computerScore)
+    {
+        console.log("You won, congrats!!!");
+    }else
+    {
+        console.log("You lost, better luck next time!");
+    }
+     
+}
+
 
 let humanScore = 0;
 let computerScore = 0;
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-
-
-
-playRound(humanSelection,computerSelection);
+playGame();
