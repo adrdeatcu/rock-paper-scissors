@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./images/bg2.webp);
+   
+}
+
+#rock-image,
+#paper-image,
+#scissor-image{
+    width: 150px;
+    height: 150px;
+    
+}
+
+.btnSelection{
+    border-radius: 100px;
+    padding: 30px;
+}
