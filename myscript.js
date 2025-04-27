@@ -145,9 +145,9 @@ function playRound(humanChoice, computerChoice)
 
 function playAgain()
 {
-        humanScore=0;
+        humanScore=0;;
         computerScore=0;
-        outputText.textContent= "Choose your weapon:";
+        outputText.textContent='';
         outputScore.textContent= `The Score is: ${humanScore} - ${computerScore}`;
         rockSelected.disabled = false;
         paperSelected.disabled = false;
